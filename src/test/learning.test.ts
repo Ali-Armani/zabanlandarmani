@@ -14,21 +14,64 @@ describe("A1 learning foundation", () => {
       "greetings",
       "personal",
       "family",
+      "countries",
       "be",
+      "pronouns",
+      "have",
       "present",
+      "routine",
+      "frequency",
+      "continuous",
       "articles",
+      "plurals",
+      "demonstratives",
       "possessives",
+      "ownership",
       "there",
       "can",
+      "imperatives",
       "prepositions",
       "questions",
       "colors",
+      "adjectives",
+      "feelings",
+      "appearance",
       "food",
+      "countable",
+      "quantity",
+      "wouldlike",
+      "liking",
       "home",
       "body",
+      "health",
       "time",
+      "months",
+      "weather",
       "jobs",
+      "hobbies",
+      "sports",
+      "clothes",
+      "shopping",
+      "technology",
+      "town",
+      "directions",
+      "transport",
+      "comparatives",
+      "superlatives",
+      "waswere",
+      "pastsimple",
+      "irregular",
+      "goingto",
+      "conjunctions",
       "cafe",
+      "polite",
+      "vowels",
+      "endings",
+      "myself",
+      "readfamily",
+      "readday",
+      "paragraph",
+      "mistakes",
     ]);
   });
   it("keeps higher levels outside the active curriculum", () => {
@@ -53,6 +96,27 @@ describe("A1 learning foundation", () => {
   it("keeps repeated words in one notebook entry", () => {
     expect(vocabulary.filter((word) => word.word === "name")).toHaveLength(1);
     expect(vocabulary.filter((word) => word.word === "mother")).toHaveLength(1);
+  });
+  it("keeps lesson ids unique and URL-safe", () => {
+    const ids = lessons.map((lesson) => lesson.id);
+    expect(new Set(ids).size).toBe(ids.length);
+    expect(ids.every((id) => /^[a-z]+$/.test(id))).toBe(true);
+  });
+  it("has exactly one correct option in every multiple-choice question", () => {
+    for (const lesson of lessons) {
+      const choice = lesson.activities[0];
+      const options = (choice?.options ?? []).map(normalizeAnswer);
+      expect(new Set(options).size).toBe(options.length);
+      expect(
+        options.filter((option) => option === normalizeAnswer(choice?.answer ?? "")),
+      ).toHaveLength(1);
+    }
+  });
+  it("keeps notebook words unique and different from lesson ids", () => {
+    const words = lessons.flatMap((lesson) => lesson.vocabulary.map((item) => item.word));
+    expect(new Set(words).size).toBe(words.length);
+    const ids = new Set(lessons.map((lesson) => lesson.id));
+    expect(words.filter((word) => ids.has(word))).toEqual([]);
   });
   it("recommends foundational learning for low placement performance", () => {
     expect(placementLevel(2, 6)).toBe("A1");
