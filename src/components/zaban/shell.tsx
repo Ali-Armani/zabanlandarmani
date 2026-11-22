@@ -44,7 +44,7 @@ export function Shell({ children }: { children: ReactNode }) {
             <Link key={n.to} to={n.to} className={`nav-item ${path === n.to ? "active" : ""}`}>
               <n.icon />
               {n.title}
-              {n.to === "/levels" && <span className="mr-auto pill">A1</span>}
+              {n.to === "/levels" && <span className="mr-auto pill">A1–A2</span>}
             </Link>
           ))}
         </nav>

@@ -25,15 +25,20 @@ import {
   skillNames,
   faNumber,
   placementLevel,
+  units,
+  levelNames,
+  type Level,
 } from "@/features/learning/content";
 import { useLearning } from "@/features/learning/store";
 import { speak } from "@/features/learning/browser-speech";
 import squirrel from "@/assets/zaban-squirrel.png";
 export function LevelsPage() {
+  const [level, setLevel] = useState<Level>("A1");
   const [search, setSearch] = useState("");
   const [skill, setSkill] = useState("all");
   const state = useLearning();
-  const filtered = lessons.filter(
+  const levelLessons = units.filter((u) => u.level === level).flatMap((u) => u.lessons);
+  const filtered = levelLessons.filter(
     (l) =>
       (skill === "all" ||
         (skill === "favorite" ? state.favorites.includes(l.id) : l.skill === skill)) &&
@@ -46,16 +51,30 @@ export function LevelsPage() {
         description="از اولین سلام تا یک گفت‌وگوی واقعی؛ قدم به قدم، همراه تو هستیم."
       />
       <div className="flex flex-wrap gap-3 mb-8">
-        {["A1", "A2", "B1", "B2", "C1", "C2"].map((l, i) => (
-          <div
-            className={`flex items-center gap-2 px-5 py-3 border rounded-md ${i ? "text-muted-foreground bg-muted" : "bg-secondary text-primary border-primary"}`}
-            key={l}
-          >
-            {i ? <LockKeyhole className="size-4" /> : <Sprout className="size-4" />}
-            <strong dir="ltr">{l}</strong>
-            <span className="text-xs">{i ? "به‌زودی" : "مبتدی"}</span>
-          </div>
-        ))}
+        {["A1", "A2", "B1", "B2", "C1", "C2"].map((l, i) =>
+          i < 2 ? (
+            <button
+              type="button"
+              key={l}
+              aria-pressed={level === l}
+              onClick={() => setLevel(l as Level)}
+              className={`flex items-center gap-2 px-5 py-3 border rounded-md ${level === l ? "bg-secondary text-primary border-primary" : "text-muted-foreground hover:bg-muted"}`}
+            >
+              <Sprout className="size-4" />
+              <strong dir="ltr">{l}</strong>
+              <span className="text-xs">{levelNames[l as Level]}</span>
+            </button>
+          ) : (
+            <div
+              className="flex items-center gap-2 px-5 py-3 border rounded-md text-muted-foreground bg-muted"
+              key={l}
+            >
+              <LockKeyhole className="size-4" />
+              <strong dir="ltr">{l}</strong>
+              <span className="text-xs">به‌زودی</span>
+            </div>
+          ),
+        )}
       </div>
       <div className="flex flex-wrap gap-3 mb-6">
         <div className="relative flex-1 min-w-48">
@@ -275,6 +294,7 @@ export function ProgressPage() {
           { title: "اولین جوانه", need: 1 },
           { title: "شاخهٔ تازه", need: 5 },
           { title: "درخت دانایی", need: 20 },
+          { title: "جنگل زبان", need: 50 },
         ].map((b) => (
           <div
             key={b.title}
@@ -563,7 +583,7 @@ export function AboutPage() {
           },
           {
             title: "جوانه‌های آینده",
-            text: "سطح A1 شروع این مسیر است. سطح‌های بالاتر، گفت‌وگوی هوشمند و امکانات اجتماعی در ادامه به جنگل ما اضافه می‌شوند.",
+            text: "سطح‌های A1 و A2 در دسترس‌اند. سطح‌های بالاتر، گفت‌وگوی هوشمند و امکانات اجتماعی در ادامه به جنگل ما اضافه می‌شوند.",
           },
         ].map((s) => (
           <section className="py-6 border-b" key={s.title}>

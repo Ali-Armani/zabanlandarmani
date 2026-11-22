@@ -3,7 +3,14 @@ import { Link } from "@tanstack/react-router";
 import { ArrowLeft, ArrowRight, Download, Heart, Mic, Volume2, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Shell } from "./shell";
-import { lessons, normalizeAnswer, faNumber, type Lesson } from "@/features/learning/content";
+import {
+  lessons,
+  normalizeAnswer,
+  faNumber,
+  levelNames,
+  levelOf,
+  type Lesson,
+} from "@/features/learning/content";
 import { useLearning } from "@/features/learning/store";
 import { speak, recognize } from "@/features/learning/browser-speech";
 import squirrel from "@/assets/zaban-squirrel.png";
@@ -89,7 +96,9 @@ export function LessonPlayer({ lesson }: { lesson: Lesson }) {
             </Button>
           </div>
         </div>
-        <span className="pill">سطح مبتدی · A1</span>
+        <span className="pill">
+          سطح {levelNames[levelOf(lesson.id)]} · {levelOf(lesson.id)}
+        </span>
         <h1 className="page-heading mt-3">
           {lesson.icon} {lesson.title}
         </h1>

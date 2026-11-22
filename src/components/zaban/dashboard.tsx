@@ -18,7 +18,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Shell } from "./shell";
-import { lessons, faNumber } from "@/features/learning/content";
+import { lessons, faNumber, levelNames, levelOf } from "@/features/learning/content";
 import { useLearning } from "@/features/learning/store";
 import forest from "@/assets/forest-learning.jpg";
 import squirrel from "@/assets/zaban-squirrel.png";
@@ -27,6 +27,9 @@ export function Dashboard() {
   const next = lessons.find((l) => !state.completed.includes(l.id)) ?? lessons[0];
   const pct = Math.min(100, Math.round((state.minutes / state.goal) * 100));
   if (!next) return null;
+  const level = levelOf(next.id);
+  const levelLessons = lessons.filter((l) => levelOf(l.id) === level);
+  const levelDone = levelLessons.filter((l) => state.completed.includes(l.id)).length;
   return (
     <Shell>
       <div className="welcome">
@@ -124,7 +127,9 @@ export function Dashboard() {
             <div className="lesson-feature-main">
               <div className="lesson-art">{next.icon}</div>
               <div>
-                <span className="pill">سطح مبتدی · A1</span>
+                <span className="pill">
+                  سطح {levelNames[level]} · {level}
+                </span>
                 <h3>{next.title}</h3>
                 <p>با یک قدم کوچک، یک مهارت تازه یاد بگیر.</p>
                 <div className="flex gap-4 mt-3 text-muted-foreground text-[10px]">
@@ -141,15 +146,13 @@ export function Dashboard() {
             <div className="lesson-feature-footer">
               <div className="flex-1 max-w-[210px]">
                 <div className="flex justify-between text-[10px] text-muted-foreground mb-2">
-                  <span>پیشرفت در سطح مبتدی</span>
-                  <span>
-                    {faNumber(Math.round((state.completed.length / lessons.length) * 100))}٪
-                  </span>
+                  <span>پیشرفت در سطح {levelNames[level]}</span>
+                  <span>{faNumber(Math.round((levelDone / levelLessons.length) * 100))}٪</span>
                 </div>
                 <div className="progress-track">
                   <div
                     className="progress-fill"
-                    style={{ width: `${(state.completed.length / lessons.length) * 100}%` }}
+                    style={{ width: `${(levelDone / levelLessons.length) * 100}%` }}
                   />
                 </div>
               </div>
