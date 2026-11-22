@@ -52,7 +52,7 @@ export function LevelsPage() {
       />
       <div className="flex flex-wrap gap-3 mb-8">
         {["A1", "A2", "B1", "B2", "C1", "C2"].map((l, i) =>
-          i < 2 ? (
+          i < 3 ? (
             <button
               type="button"
               key={l}
@@ -583,7 +583,7 @@ export function AboutPage() {
           },
           {
             title: "جوانه‌های آینده",
-            text: "سطح‌های A1 و A2 در دسترس‌اند. سطح‌های بالاتر، گفت‌وگوی هوشمند و امکانات اجتماعی در ادامه به جنگل ما اضافه می‌شوند.",
+            text: "سطح‌های A1 تا B1 در دسترس‌اند. سطح‌های بالاتر، گفت‌وگوی هوشمند و امکانات اجتماعی در ادامه به جنگل ما اضافه می‌شوند.",
           },
         ].map((s) => (
           <section className="py-6 border-b" key={s.title}>
