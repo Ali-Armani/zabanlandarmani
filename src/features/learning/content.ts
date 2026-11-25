@@ -98,32 +98,74 @@ const specifications = [
   ],
   [
     "greetings",
-    "سلام و معرفی خود",
+    "سلام و احوال‌پرسی و معرفی خود و دیگران",
     "👋",
     "speaking",
-    "برای یک گفت‌وگوی دوستانه با Hello یا Hi شروع کن. برای معرفی خودت از I’m و نامت استفاده کن. عبارت Nice to meet you برای اولین دیدار است.",
+    `در این درس می‌آموزی به انگلیسی سلام و خداحافظی کنی، خودت و دیگران را معرفی کنی، نام و نام خانوادگی را بپرسی و هجی کنی، کشور و ملیت و زبان را بیان کنی و شماره تلفن و ایمیل بدهی.
+
+عبارت‌های کاربردی:
+Hello! / Hi! = سلام
+Good morning. = صبح بخیر
+Good afternoon. = بعدازظهر بخیر
+Good evening. = عصر بخیر
+Good night. = شب بخیر
+How are you? — I’m fine, thanks. And you?
+What’s your name? — My name is Ali. / I’m Ali.
+Nice to meet you. — Nice to meet you, too.
+Where are you from? — I’m from Iran.
+What do you do? — I’m a student.
+Can you spell that? — A-L-I.
+See you later. / Have a nice day. / Goodbye.
+
+گرامر:
+ضمیرهای فاعلی: I, you, he, she, it, we, they.
+فعل to be در زمان حال: I am؛ he/she/it is؛ you/we/they are.
+مثبت: I am Ali. She is a teacher. They are students.
+منفی: I am not a teacher. He isn’t American. They aren’t friends.
+سؤالی: Am I…? Is she…? Are they…? پاسخ کوتاه: Yes, I am. / No, I’m not.
+پرسش‌واژه‌ها: What (نام/اطلاعات)، Where (مکان/کشور)، Who (افراد). ساختار: Wh-word + am/is/are + subject.
+صفات ملکی: my, your, his, her, its, our, their؛ پیش از اسم می‌آیند.
+حروف تعریف: a پیش از صدای همخوان و an پیش از صدای واکه می‌آید: a student, an apple, an English teacher.
+حروف الفبا ۲۶ حرف دارند؛ نام حروف را برای هجی کردن نام تمرین کن.`,
     [
-      "Hello! I’m Sara.",
-      "What’s your name?",
-      "Nice to meet you!",
-      "How are you? I’m fine, thanks.",
-      "See you tomorrow!",
+      "Hello! My name is Anna. What’s your name?",
+      "Hi! I’m David. Nice to meet you.",
+      "Where are you from? — I’m from Canada. And you? — I’m from Iran.",
+      "Are you a student? — Yes, I am. I’m an English student.",
+      "What is your last name? — My last name is Ahmadi.",
+      "Can you spell that, please? — A-H-M-A-D-I.",
+      "My name is Emma Wilson. I am 20 years old. I am from the United States. I am American.",
+      "My friend is Sara. She is from Iran. She is also an English student. We are in the same class."
     ],
     [
-      v("hello", "سلام", "Hello! How are you?", "say hello"),
-      v("meet", "آشنا شدن", "Nice to meet you!", "nice to meet you"),
-      v("goodbye", "خداحافظ", "Goodbye! See you tomorrow.", "say goodbye"),
-      v("fine", "خوب", "I’m fine, thanks.", "I’m fine"),
-      v("take care", "مراقب خودت باش", "Goodbye! Take care.", "take care"),
-      v("see you later", "بعداً می‌بینمت", "Bye! See you later.", "see you later"),
+      v("hello", "سلام", "Hello, my name is Anna.", "say hello"),
+      v("hi", "سلام (دوستانه)", "Hi, I am Alex.", "say hi"),
+      v("goodbye", "خداحافظ", "Goodbye, everyone.", "say goodbye"),
+      v("name", "نام", "What is your name?", "first name"),
+      v("first name", "نام کوچک", "My first name is Mary.", "your first name"),
+      v("last name", "نام خانوادگی", "What is your last name?", "your last name"),
+      v("student", "دانش‌آموز / دانشجو / زبان‌آموز", "I am a student.", "an English student"),
+      v("teacher", "معلم", "She is an English teacher.", "English teacher"),
+      v("friend", "دوست", "Anna is my friend.", "a good friend"),
+      v("country", "کشور", "Iran is my country.", "your country"),
+      v("language", "زبان", "I speak two languages.", "speak English"),
+      v("phone number", "شماره تلفن", "What is your phone number?", "your phone number"),
+      v("email address", "نشانی ایمیل", "What is your email address?", "email address"),
+      v("spell", "هجی کردن", "Can you spell your name?", "spell your name"),
+      v("nice", "خوب؛ خوشایند", "Nice to meet you.", "nice to meet you"),
+      v("from", "از؛ اهلِ", "I am from Iran.", "be from"),
+      v("American", "آمریکایی", "He is American.", "an American student"),
+      v("Iranian", "ایرانی", "I am Iranian.", "an Iranian teacher"),
+      v("English", "انگلیسی؛ زبان انگلیسی", "I speak English.", "speak English"),
+      v("welcome", "خوش آمدید", "Welcome to our class.", "welcome to class")
     ],
     choice(
-      "برای معرفی خودت کدام جمله درست است؟",
-      ["I’m Sara.", "You Sara.", "I Sara is."],
-      "I’m Sara.",
-      "I’m شکل کوتاه I am است؛ بعد از آن نام خودت را می‌گویی.",
+      "جملهٔ درست برای معرفی خود کدام است؟",
+      ["I am Ali.", "I is Ali.", "I are Ali."],
+      "I am Ali.",
+      "با ضمیر I از am استفاده می‌کنیم."
     ),
-    "با یک سلام شروع کن، نامت را بگو و نام طرف مقابل را بپرس.",
+    "خودت را در ۵ تا ۷ جمله معرفی کن. سپس با هم‌کلاسی گفت‌وگو کن: سلام کن، نام و نام خانوادگی را بپرس، درباره کشور و زبان سؤال کن و نامت را هجی کن."
   ],
   [
     "personal",
