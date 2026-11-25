@@ -45,6 +45,322 @@ const choice = (
 ): Activity => ({ kind: "choice", prompt, options, answer, explanation });
 const specifications = [
   [
+    "greetings",
+    "سلام و احوال‌پرسی و معرفی خود و دیگران",
+    "👋",
+    "speaking",
+    `در این درس می‌آموزی به انگلیسی سلام و خداحافظی کنی.
+خودت و دیگران را معرفی می‌کنی.
+نام و نام خانوادگی را می‌پرسی و هجی می‌کنی.
+کشور، ملیت و زبان را بیان می‌کنی.
+شماره تلفن و نشانی ایمیل می‌دهی.
+
+عبارت‌های کاربردی:
+Hello! / Hi! = سلام
+Good morning. = صبح بخیر
+Good afternoon. = بعدازظهر بخیر
+Good evening. = عصر بخیر
+Good night. = شب بخیر
+How are you? — I’m fine, thanks. And you?
+What’s your name? — My name is Ali. / I’m Ali.
+Nice to meet you. — Nice to meet you, too.
+Where are you from? — I’m from Iran.
+What do you do? — I’m a student.
+Can you spell that? — A-L-I.
+See you later. / Have a nice day. / Goodbye.
+
+گرامر:
+ضمیرهای فاعلی: I, you, he, she, it, we, they.
+فعل to be در زمان حال: I am؛ he/she/it is؛ you/we/they are.
+جمله مثبت: I am Ali.
+جمله مثبت: She is a teacher.
+جمله مثبت: They are students.
+جمله منفی: I am not a teacher.
+جمله منفی: He isn’t American.
+جمله منفی: They aren’t friends.
+سؤال: Am I…?
+سؤال: Is she…?
+سؤال: Are they…?
+پاسخ کوتاه: Yes, I am. / No, I’m not.
+پرسش‌واژه‌ها: What (نام/اطلاعات)، Where (مکان/کشور)، Who (افراد).
+ساختار پرسش: Wh-word + am/is/are + subject.
+صفات ملکی: my, your, his, her, its, our, their؛ پیش از اسم می‌آیند.
+حروف تعریف: a پیش از صدای همخوان می‌آید.
+حروف تعریف: an پیش از صدای واکه می‌آید.
+نمونه‌ها: a student, an apple, an English teacher.
+حروف الفبا ۲۶ حرف دارند.
+نام حروف را برای هجی کردن نام تمرین کن.`,
+    [
+      "Hello! My name is Anna. What’s your name?",
+      "Hi! I’m David. Nice to meet you.",
+      "Where are you from? — I’m from Canada. And you? — I’m from Iran.",
+      "Are you a student? — Yes, I am. I’m an English student.",
+      "What is your last name? — My last name is Ahmadi.",
+      "Can you spell that, please? — A-H-M-A-D-I.",
+      "My name is Emma Wilson. I am 20 years old. I am from the United States. I am American.",
+      "My friend is Sara. She is from Iran. She is also an English student. We are in the same class."
+    ],
+    [
+      v("hello", "سلام", "Hello, my name is Anna.", "say hello"),
+      v("hi", "سلام (دوستانه)", "Hi, I am Alex.", "say hi"),
+      v("goodbye", "خداحافظ", "Goodbye, everyone.", "say goodbye"),
+      v("name", "نام", "What is your name?", "first name"),
+      v("first name", "نام کوچک", "My first name is Mary.", "your first name"),
+      v("last name", "نام خانوادگی", "What is your last name?", "your last name"),
+      v("student", "دانش‌آموز / دانشجو / زبان‌آموز", "I am a student.", "an English student"),
+      v("teacher", "معلم", "She is an English teacher.", "English teacher"),
+      v("friend", "دوست", "Anna is my friend.", "a good friend"),
+      v("country", "کشور", "Iran is my country.", "your country"),
+      v("language", "زبان", "I speak two languages.", "speak English"),
+      v("phone number", "شماره تلفن", "What is your phone number?", "your phone number"),
+      v("email address", "نشانی ایمیل", "What is your email address?", "email address"),
+      v("spell", "هجی کردن", "Can you spell your name?", "spell your name"),
+      v("nice", "خوب؛ خوشایند", "Nice to meet you.", "nice to meet you"),
+      v("from", "از؛ اهلِ", "I am from Iran.", "be from"),
+      v("American", "آمریکایی", "He is American.", "an American student"),
+      v("Iranian", "ایرانی", "I am Iranian.", "an Iranian teacher"),
+      v("English", "انگلیسی؛ زبان انگلیسی", "I speak English.", "speak English"),
+      v("welcome", "خوش آمدید", "Welcome to our class.", "welcome to class")
+    ],
+    choice(
+      "جملهٔ درست برای معرفی خود کدام است؟",
+      ["I am Ali.", "I is Ali.", "I are Ali."],
+      "I am Ali.",
+      "با ضمیر I از am استفاده می‌کنیم."
+    ),
+    "خودت را در ۵ تا ۷ جمله معرفی کن. سپس با هم‌کلاسی گفت‌وگو کن: سلام کن، نام و نام خانوادگی را بپرس، درباره کشور و زبان سؤال کن و نامت را هجی کن."
+  ],
+  [
+    "people-jobs-family",
+    "افراد، شغل‌ها و خانواده",
+    "👨‍👩‍👧‍👦",
+    "speaking",
+    `اهداف آموزشی:
+در پایان این درس می‌توانی اعضای خانواده‌ات را معرفی کنی.
+درباره تعداد اعضای خانواده صحبت می‌کنی.
+شغل افراد را بیان می‌کنی.
+درباره سن افراد سؤال می‌کنی و پاسخ می‌دهی.
+ظاهر و ویژگی‌های شخصیتی افراد را با صفات ساده توصیف می‌کنی.
+از have و has به‌درستی استفاده می‌کنی.
+مالکیت را با ساختار Possessive 's بیان می‌کنی.
+از صفات ملکی در جمله استفاده می‌کنی.
+درباره خانواده و افراد سؤال می‌سازی.
+
+واژگان درس — خانواده:
+family = خانواده؛ mother = مادر؛ father = پدر؛ parents = والدین؛ brother = برادر؛ sister = خواهر؛ husband = شوهر؛ wife = همسر؛ son = پسر؛ daughter = دختر؛ grandmother = مادربزرگ؛ grandfather = پدربزرگ؛ uncle = عمو/دایی؛ aunt = عمه/خاله؛ cousin = پسرعمو/دخترعمو و دیگر خویشاوندان هم‌نسل.
+واژگان درس — شغل‌ها:
+job = شغل؛ doctor = پزشک؛ nurse = پرستار؛ driver = راننده؛ police officer = افسر پلیس.
+واژگان درس — توصیف افراد:
+tall = قدبلند؛ short = کوتاه‌قد/کوتاه؛ young = جوان؛ old = مسن/قدیمی؛ friendly = خوش‌برخورد؛ kind = مهربان؛ beautiful = زیبا؛ strong = قوی.
+
+عبارت‌های کاربردی:
+How many people are in your family? = چند نفر در خانواده شما هستند؟
+There are four people in my family. = چهار نفر در خانواده من هستند.
+Do you have any brothers or sisters? = آیا برادر یا خواهر دارید؟
+I have one brother. = من یک برادر دارم.
+I don't have any sisters. = من هیچ خواهری ندارم.
+What does your father do? = شغل پدرت چیست؟
+He is a doctor. = او پزشک است.
+How old are you? = چند سال دارید؟
+I am twenty years old. = من بیست سال دارم.
+How old is your mother? = مادرت چند سال دارد؟
+She is forty-five. = او چهل‌وپنج سال دارد.
+Who is this? = این کیست؟
+This is my sister. = این خواهر من است.
+What does she look like? = ظاهر او چگونه است؟
+She is tall and beautiful. = او قدبلند و زیباست.
+He has short hair. = او موهای کوتاهی دارد.
+She has blue eyes. = او چشمان آبی دارد.
+Tell me about your family. = درباره خانواده‌ات برایم صحبت کن.
+
+گرامر ۱ — Have و Has:
+برای I، you، we و they از have استفاده می‌کنیم.
+برای he، she و it از has استفاده می‌کنیم.
+ساختار مثبت: Subject + have/has + Object.
+مثال: I have two brothers.
+مثال: She has a sister.
+مثال: They have a big family.
+ساختار منفی: Subject + don't/doesn't + have + Object.
+مثال: I don't have a brother.
+مثال: He doesn't have a sister.
+مثال: They don't have children.
+نکته: بعد از doesn't همیشه have می‌آید، نه has.
+درست: She doesn't have a brother.
+نادرست: She doesn't has a brother.
+ساختار سؤال: Do/Does + Subject + have + Object?
+مثال: Do you have a brother?
+مثال: Does she have a sister?
+مثال: Do they have children?
+پاسخ کوتاه: Yes, I do. / No, I don't.
+پاسخ کوتاه: Yes, he does. / No, he doesn't.
+
+گرامر ۲ — مالکیت با 's:
+برای نشان دادن مالکیت یک شخص، به انتهای اسم مفرد 's اضافه می‌کنیم.
+ساختار: Person + 's + Noun.
+مثال: Sara's mother = مادر سارا.
+مثال: Ali's father = پدر علی.
+مثال: John's brother = برادر جان.
+در جمله: Sara's mother is a teacher.
+در جمله: Ali's father is a doctor.
+اگر اسم جمع به s ختم شود، فقط آپاستروف اضافه می‌کنیم.
+مثال: The students' teacher = معلم دانش‌آموزان.
+
+گرامر ۳ — صفات ملکی:
+I → my؛ you → your؛ he → his؛ she → her؛ it → its؛ we → our؛ they → their.
+مثال: My mother is a doctor.
+مثال: His brother is a student.
+مثال: Their parents are friendly.
+صفت ملکی پیش از اسم می‌آید.
+درست: Her sister.
+نادرست: Hers sister.
+
+گرامر ۴ — صفات:
+صفت برای توصیف اسم استفاده می‌شود.
+در انگلیسی معمولاً صفت قبل از اسم می‌آید.
+مثال: a tall man؛ a beautiful woman؛ a friendly teacher.
+صفت بعد از فعل to be نیز قرار می‌گیرد.
+مثال: My father is tall.
+مثال: My mother is kind.
+مثال: My sister is young.
+صفت در انگلیسی جمع بسته نمی‌شود.
+درست: They are tall.
+نادرست: They are talls.
+
+گرامر ۵ — پرسیدن سن:
+برای پرسیدن سن از How old استفاده می‌کنیم.
+ساختار: How old + am/is/are + Subject?
+مثال: How old are you?
+مثال: How old is your father?
+مثال: How old are your parents?
+پاسخ: I am 20 years old.
+پاسخ: She is 35 years old.
+پاسخ: They are 60 years old.
+برای بیان سن از فعل to be استفاده می‌کنیم، نه have.
+درست: I am 20 years old.
+نادرست: I have 20 years.
+
+تلفظ:
+صدای /θ/ بدون لرزش تارهای صوتی و با قرار گرفتن نوک زبان کمی بین دندان‌ها تولید می‌شود.
+نمونه‌ها: three, think.
+صدای /ð/ با لرزش تارهای صوتی و با قرار گرفتن نوک زبان کمی بین دندان‌ها تولید می‌شود.
+نمونه‌ها: mother, father, brother, this.
+کلمات mother, father, brother, three, this, that و they را چند بار تکرار کن.
+
+مکالمه ۱ — Talking About Family:
+Anna: Do you have a big family, Sara?
+Sara: No, I don't. I have a small family.
+Anna: How many people are in your family?
+Sara: There are four people: my father, my mother, my brother, and me.
+Anna: What does your father do?
+Sara: He is a doctor.
+Anna: And your mother?
+Sara: She is a teacher.
+Anna: How old is your brother?
+Sara: He is 15 years old.
+
+مکالمه ۲ — Describing a Person:
+Tom: Who is that woman?
+David: She is my aunt.
+Tom: What is her name?
+David: Her name is Mary.
+Tom: Is she a teacher?
+David: No, she isn't. She is a nurse.
+Tom: Is she young?
+David: Yes, she is. She is 30 years old.
+Tom: She is very friendly!
+
+درک مطلب — My Family:
+Hello! My name is Daniel. I am 22 years old. I have a small family. There are four people in my family.
+My father's name is Robert. He is 50 years old. He is a doctor. My mother's name is Linda. She is 47 years old. She is a teacher.
+I have one sister. Her name is Emma. She is 18 years old. She is a student. She is tall and friendly.
+We live in a small house. I love my family very much.
+پرسش‌ها: How old is Daniel? How many people are in his family? What is his father's name? What does his father do? How old is his mother? What is his mother's job? Does Daniel have a brother? How old is Emma? Is Emma a teacher? Where does the family live?
+
+شنیداری ۱ — My Family:
+Hello! My name is Lisa. I am 19 years old. I have a big family. I have two brothers and one sister.
+My father is a driver. My mother is a nurse. My older brother is 25 years old. My younger brother is 12 years old. My sister is 16 years old.
+We are a happy family.
+شنیداری ۲ — A New Friend:
+A: Do you have any brothers or sisters?
+B: Yes, I do. I have one brother and one sister.
+A: What does your brother do?
+B: He is a student.
+A: And your sister?
+B: She is a doctor.
+
+تمرین گفتاری:
+خودت را معرفی کن و تعداد اعضای خانواده، تعداد خواهر و برادرها و شغل والدینت را بیان کن.
+از هم‌کلاسی‌ات درباره تعداد اعضای خانواده، خواهر و برادرها، شغل والدین و سن اعضای خانواده سؤال کن.
+یکی از اعضای خانواده را با نام، سن، شغل، ظاهر و ویژگی شخصیتی در پنج جمله توصیف کن.
+با هم‌کلاسی خود نقش‌آفرینی کن و درباره خانواده‌هایتان گفت‌وگو کنید.
+
+تمرین نوشتاری:
+در ۸ تا ۱۰ جمله درباره خانواده خود بنویس.
+یکی از اعضای خانواده را در پنج تا هفت جمله توصیف کن.
+نمونه: My sister's name is Sara. She is 20 years old. She is a student. She is tall and beautiful. She has long hair. She is very friendly. I love my sister.
+
+ارزیابی:
+آزمون درس شامل ۲۵ سؤال در بخش‌های چندگزینه‌ای، درست/نادرست، تطبیق، جای خالی، مرتب‌سازی جمله، تشخیص خطا، تبدیل جمله، تکمیل مکالمه و درک مطلب است.
+در ارزیابی گفتاری، معرفی اعضای خانواده، استفاده از have/has و صفات ملکی، واژگان، تلفظ، روانی و تعامل سنجیده می‌شود.
+در ارزیابی نوشتاری، پوشش موضوع، صحت گرامری، واژگان، استفاده از have/has، املا، نشانه‌گذاری و انسجام متن سنجیده می‌شود.
+راهنمای مدرس: از تصویر خانواده و شجره‌نامه ساده استفاده کن؛ واژگان را با تصویر آموزش بده؛ have و has را با جمله‌های مثبت، منفی و سؤالی تمرین کن؛ مالکیت را با نام اعضای خانواده آموزش بده؛ فعالیت دونفره طراحی کن.
+خطاهای رایج: She have a sister → She has a sister.
+He don't have a brother → He doesn't have a brother.
+She doesn't has a sister → She doesn't have a sister.
+I have 20 years → I am 20 years old.
+My father is doctor → My father is a doctor.
+Sara mother is a teacher → Sara's mother is a teacher.
+They are friend → They are friends.
+She is beautiful girl → She is a beautiful girl.`,
+    [
+      "Do you have a big family? — No, I don't. I have a small family.",
+      "How many people are in your family? — There are four people in my family.",
+      "What does your father do? — He is a doctor.",
+      "How old is your brother? — He is 15 years old.",
+      "My mother's name is Linda. She is 47 years old. She is a teacher.",
+      "My sister's name is Sara. She is 20 years old. She is a student.",
+      "She is tall and friendly. She has long hair.",
+      "I have one brother and one sister. My brother is a student. My sister is a doctor.",
+    ],
+    [
+      v("family", "خانواده", "My family is small.", "my family"),
+      v("mother", "مادر", "My mother is a teacher.", "my mother"),
+      v("father", "پدر", "My father is a doctor.", "my father"),
+      v("parents", "والدین، پدر و مادر", "My parents are at home.", "my parents"),
+      v("brother", "برادر", "I have one brother.", "one brother"),
+      v("sister", "خواهر", "My sister is friendly.", "my sister"),
+      v("husband", "شوهر، همسر مرد", "Her husband is a doctor.", "her husband"),
+      v("wife", "همسر، زن", "His wife is a teacher.", "his wife"),
+      v("son", "پسر، فرزند پسر", "They have one son.", "one son"),
+      v("daughter", "دختر، فرزند دختر", "They have two daughters.", "two daughters"),
+      v("grandmother", "مادربزرگ", "My grandmother is 70 years old.", "my grandmother"),
+      v("grandfather", "پدربزرگ", "My grandfather is very kind.", "my grandfather"),
+      v("uncle", "عمو، دایی", "My uncle is a driver.", "my uncle"),
+      v("aunt", "عمه، خاله", "My aunt is a nurse.", "my aunt"),
+      v("cousin", "خویشاوند هم‌نسل؛ پسرعمو/دخترعمو و ...", "My cousin is 18 years old.", "my cousin"),
+      v("job", "شغل، کار", "What is your job?", "a new job"),
+      v("doctor", "پزشک، دکتر", "My father is a doctor.", "a good doctor"),
+      v("nurse", "پرستار", "My sister is a nurse.", "a nurse"),
+      v("driver", "راننده", "He is a bus driver.", "a bus driver"),
+      v("police officer", "افسر پلیس، مأمور پلیس", "My brother is a police officer.", "a police officer"),
+      v("tall", "قدبلند", "My father is tall.", "a tall man"),
+      v("short", "کوتاه‌قد؛ کوتاه", "My brother is short.", "short hair"),
+      v("young", "جوان، کم‌سن", "He is a young teacher.", "a young teacher"),
+      v("old", "پیر، مسن؛ قدیمی", "My grandfather is old.", "an old house"),
+      v("friendly", "خوش‌برخورد، دوستانه", "My teacher is friendly.", "a friendly person"),
+      v("kind", "مهربان", "My mother is kind.", "a kind person"),
+      v("beautiful", "زیبا", "She is beautiful.", "a beautiful woman"),
+      v("strong", "قوی، نیرومند", "My father is strong.", "a strong man"),
+    ],
+    choice(
+      "جای خالی را کامل کن: She ___ two sisters.",
+      ["have", "has", "having"],
+      "has",
+      "برای she از has استفاده می‌کنیم.",
+    ),
+    "در ۸ تا ۱۰ جمله خانواده‌ات را معرفی کن. تعداد اعضای خانواده، خواهر و برادرها، شغل والدین، سن و ویژگی‌های یکی از اعضای خانواده را بیان کن.",
+  ],
+  [
     "sounds",
     "الفبا و صداهای پایه",
     "🔤",
@@ -95,77 +411,6 @@ const specifications = [
       "thirty یعنی سی و thirteen یعنی سیزده.",
     ),
     "سن و شمارهٔ تلفن فرضی خود را به انگلیسی بگو.",
-  ],
-  [
-    "greetings",
-    "سلام و احوال‌پرسی و معرفی خود و دیگران",
-    "👋",
-    "speaking",
-    `در این درس می‌آموزی به انگلیسی سلام و خداحافظی کنی، خودت و دیگران را معرفی کنی، نام و نام خانوادگی را بپرسی و هجی کنی، کشور و ملیت و زبان را بیان کنی و شماره تلفن و ایمیل بدهی.
-
-عبارت‌های کاربردی:
-Hello! / Hi! = سلام
-Good morning. = صبح بخیر
-Good afternoon. = بعدازظهر بخیر
-Good evening. = عصر بخیر
-Good night. = شب بخیر
-How are you? — I’m fine, thanks. And you?
-What’s your name? — My name is Ali. / I’m Ali.
-Nice to meet you. — Nice to meet you, too.
-Where are you from? — I’m from Iran.
-What do you do? — I’m a student.
-Can you spell that? — A-L-I.
-See you later. / Have a nice day. / Goodbye.
-
-گرامر:
-ضمیرهای فاعلی: I, you, he, she, it, we, they.
-فعل to be در زمان حال: I am؛ he/she/it is؛ you/we/they are.
-مثبت: I am Ali. She is a teacher. They are students.
-منفی: I am not a teacher. He isn’t American. They aren’t friends.
-سؤالی: Am I…? Is she…? Are they…? پاسخ کوتاه: Yes, I am. / No, I’m not.
-پرسش‌واژه‌ها: What (نام/اطلاعات)، Where (مکان/کشور)، Who (افراد). ساختار: Wh-word + am/is/are + subject.
-صفات ملکی: my, your, his, her, its, our, their؛ پیش از اسم می‌آیند.
-حروف تعریف: a پیش از صدای همخوان و an پیش از صدای واکه می‌آید: a student, an apple, an English teacher.
-حروف الفبا ۲۶ حرف دارند؛ نام حروف را برای هجی کردن نام تمرین کن.`,
-    [
-      "Hello! My name is Anna. What’s your name?",
-      "Hi! I’m David. Nice to meet you.",
-      "Where are you from? — I’m from Canada. And you? — I’m from Iran.",
-      "Are you a student? — Yes, I am. I’m an English student.",
-      "What is your last name? — My last name is Ahmadi.",
-      "Can you spell that, please? — A-H-M-A-D-I.",
-      "My name is Emma Wilson. I am 20 years old. I am from the United States. I am American.",
-      "My friend is Sara. She is from Iran. She is also an English student. We are in the same class."
-    ],
-    [
-      v("hello", "سلام", "Hello, my name is Anna.", "say hello"),
-      v("hi", "سلام (دوستانه)", "Hi, I am Alex.", "say hi"),
-      v("goodbye", "خداحافظ", "Goodbye, everyone.", "say goodbye"),
-      v("name", "نام", "What is your name?", "first name"),
-      v("first name", "نام کوچک", "My first name is Mary.", "your first name"),
-      v("last name", "نام خانوادگی", "What is your last name?", "your last name"),
-      v("student", "دانش‌آموز / دانشجو / زبان‌آموز", "I am a student.", "an English student"),
-      v("teacher", "معلم", "She is an English teacher.", "English teacher"),
-      v("friend", "دوست", "Anna is my friend.", "a good friend"),
-      v("country", "کشور", "Iran is my country.", "your country"),
-      v("language", "زبان", "I speak two languages.", "speak English"),
-      v("phone number", "شماره تلفن", "What is your phone number?", "your phone number"),
-      v("email address", "نشانی ایمیل", "What is your email address?", "email address"),
-      v("spell", "هجی کردن", "Can you spell your name?", "spell your name"),
-      v("nice", "خوب؛ خوشایند", "Nice to meet you.", "nice to meet you"),
-      v("from", "از؛ اهلِ", "I am from Iran.", "be from"),
-      v("American", "آمریکایی", "He is American.", "an American student"),
-      v("Iranian", "ایرانی", "I am Iranian.", "an Iranian teacher"),
-      v("English", "انگلیسی؛ زبان انگلیسی", "I speak English.", "speak English"),
-      v("welcome", "خوش آمدید", "Welcome to our class.", "welcome to class")
-    ],
-    choice(
-      "جملهٔ درست برای معرفی خود کدام است؟",
-      ["I am Ali.", "I is Ali.", "I are Ali."],
-      "I am Ali.",
-      "با ضمیر I از am استفاده می‌کنیم."
-    ),
-    "خودت را در ۵ تا ۷ جمله معرفی کن. سپس با هم‌کلاسی گفت‌وگو کن: سلام کن، نام و نام خانوادگی را بپرس، درباره کشور و زبان سؤال کن و نامت را هجی کن."
   ],
   [
     "personal",
@@ -1807,7 +2052,7 @@ See you later. / Have a nice day. / Goodbye.
       "agree خودش فعل است؛ نیازی به am نیست.",
     ),
     "این دو جمله را درست کن: She have a car. He can swims.",
-  ],
+  ]
 ] as const;
 const specificationsA2 = [
   [
@@ -6890,7 +7135,7 @@ const toUnit = (s: Specification, i: number, level: Level): Unit => ({
   ],
 });
 export const units: Unit[] = [
-  ...specifications.map((s, i) => toUnit(s, i, "A1")),
+  ...specifications.slice(0, 10).map((s, i) => toUnit(s, i, "A1")),
   ...specificationsA2.map((s, i) => toUnit(s, i, "A2")),
   ...specificationsB1.map((s, i) => toUnit(s, i, "B1")),
 ];
