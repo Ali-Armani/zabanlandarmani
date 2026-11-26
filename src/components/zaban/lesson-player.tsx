@@ -14,6 +14,78 @@ import {
 import { useLearning } from "@/features/learning/store";
 import { speak, recognize } from "@/features/learning/browser-speech";
 import squirrel from "@/assets/zaban-squirrel.png";
+const PERSIAN_CHARS = /[\u0600-\u06FF]/;
+
+function LessonLine({ line }: { line: string }) {
+  const rtl = PERSIAN_CHARS.test(line);
+  const dir = rtl ? "rtl" : "ltr";
+  const base = "leading-[2.1] whitespace-pre-wrap break-words";
+  const tone = rtl ? "text-right text-[15px]" : "text-left font-sans text-[17px] tracking-wide";
+  const heading = line.match(/^(#{1,2})\s+(.*)$/);
+  if (heading) {
+    return heading[1] === "#" ? (
+      <h3 dir={dir} className={`mt-2 text-lg font-bold ${rtl ? "text-right" : "text-left"}`}>
+        {heading[2]}
+      </h3>
+    ) : (
+      <h4
+        dir="ltr"
+        className="text-left font-sans text-base font-semibold tracking-wide text-muted-foreground"
+      >
+        {heading[2]}
+      </h4>
+    );
+  }
+  const bullet = line.match(/^-\s+(.*)$/);
+  if (bullet) {
+    return (
+      <div dir={dir} className={`flex gap-2 ${base} ${tone}`}>
+        <span aria-hidden="true">•</span>
+        <span>{bullet[1]}</span>
+      </div>
+    );
+  }
+  return (
+    <div dir={dir} className={`${base} ${tone}`}>
+      {line}
+    </div>
+  );
+}
+
+/**
+ * Renders lesson text made of simple blocks:
+ * blank line = new paragraph, "# " / "## " = headings, "- " = bullet,
+ * "> " = note box. Every line is its own row and gets its own direction,
+ * so English (LTR) and Persian (RTL) never share a line.
+ * Text is rendered as plain React text nodes (no HTML injection).
+ */
+function LessonText({ text }: { text: string }) {
+  const blocks = text.trim().split(/\n{2,}/);
+  return (
+    <div className="mb-6 space-y-5">
+      {blocks.map((block, i) => {
+        const lines = block.split("\n").map((l) => l.trimEnd());
+        if (lines.every((l) => l.startsWith("> "))) {
+          return (
+            <div key={i} className="rounded-md border-s-4 border-primary bg-secondary px-4 py-3">
+              {lines.map((l, j) => (
+                <LessonLine key={j} line={l.slice(2)} />
+              ))}
+            </div>
+          );
+        }
+        return (
+          <div key={i}>
+            {lines.map((l, j) => (
+              <LessonLine key={j} line={l} />
+            ))}
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
 export function LessonPlayer({ lesson }: { lesson: Lesson }) {
   const [step, setStep] = useState(0);
   const [answer, setAnswer] = useState("");
@@ -113,7 +185,7 @@ export function LessonPlayer({ lesson }: { lesson: Lesson }) {
           {step === 0 ? (
             <>
               <h2>بیا با هم کشف کنیم</h2>
-              <p>{lesson.explanation}</p>
+              <LessonText text={lesson.explanation} />
               <div className="english-example">
                 {lesson.examples.map((ex) => (
                   <div className="flex justify-between gap-2 items-center" key={ex}>
