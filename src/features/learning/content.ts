@@ -994,32 +994,901 @@ She is beautiful girl → She is a beautiful girl.`,
   ],
   [
     "numbers",
-    "عددها از ۱ تا ۱۰۰",
+    "اعداد ۲۰ تا ۱۰۰",
     "🔢",
     "listening",
-    "ابتدا یک تا ده را یاد بگیر. عددهای ۱۳ تا ۱۹ معمولاً به teen ختم می‌شوند. برای ۲۱ می‌گوییم twenty-one.",
+    `LEVEL A1 – BEGINNER
+LESSON 05: NUMBERS 20–100
+درس پنجم: اعداد ۲۰ تا ۱۰۰
+
+سطح: A1 – مبتدی
+بخش: Basic English Foundations
+
+بخش اول: اهداف آموزشی – Learning Objectives
+در پایان این درس، زبان‌آموز می‌تواند:
+۱. اعداد دهگان انگلیسی از ۲۰ تا ۹۰ را بشناسد.
+۲. عدد ۱۰۰ را به انگلیسی بیان کند.
+۳. اعداد ترکیبی مانند ۲۱، ۳۵ و ۵۲ را بخواند و بنویسد.
+۴. اعداد ۲۰ تا ۱۰۰ را به ترتیب بشمارد.
+۵. عدد شنیده‌شده را تشخیص دهد.
+۶. تفاوت اعداد -teen و -ty را تشخیص دهد.
+۷. تعداد اشیا را با اعداد بزرگ‌تر بیان کند.
+۸. اعداد ساده را از روی تلفظ مدرس به شکل نوشتاری تبدیل کند.
+
+بخش دوم: معرفی اعداد دهگان – Tens
+ابتدا باید اعداد دهگان را یاد بگیریم. این اعداد پایه ساخت بسیاری از اعداد بزرگ‌تر هستند.
+20
+Twenty
+تلفظ تقریبی: توِنتی
+30
+Thirty
+تلفظ تقریبی: ثِرتی
+40
+Forty
+تلفظ تقریبی: فورتی
+50
+Fifty
+تلفظ تقریبی: فیفتی
+60
+Sixty
+تلفظ تقریبی: سیکستی
+70
+Seventy
+تلفظ تقریبی: سِوِنتی
+80
+Eighty
+تلفظ تقریبی: اِیتی
+90
+Ninety
+تلفظ تقریبی: ناینتی
+100
+One hundred
+تلفظ تقریبی: وان هاندرد
+نکته مهم: شکل نوشتاری عدد ۴۰، Forty است؛ نه Fourty.
+
+بخش سوم: بانک واژگان – Vocabulary Bank
+TWENTY
+IPA: /ˈtwen.ti/
+Part of Speech: Number
+معنی فارسی: بیست
+Twenty books.
+بیست کتاب.
+I have twenty pencils.
+من بیست مداد دارم.
+Twenty students are here.
+بیست دانش‌آموز اینجا هستند.
+
+THIRTY
+IPA: /ˈθɜːr.ti/
+Part of Speech: Number
+معنی فارسی: سی
+Thirty apples.
+سی سیب.
+I have thirty books.
+من سی کتاب دارم.
+Thirty students are in the class.
+سی دانش‌آموز در کلاس هستند.
+
+FORTY
+IPA: /ˈfɔːr.ti/
+Part of Speech: Number
+معنی فارسی: چهل
+Forty chairs.
+چهل صندلی.
+I have forty pens.
+من چهل خودکار دارم.
+Forty people are here.
+چهل نفر اینجا هستند.
+
+FIFTY
+IPA: /ˈfɪf.ti/
+Part of Speech: Number
+معنی فارسی: پنجاه
+Fifty books.
+پنجاه کتاب.
+I have fifty cards.
+من پنجاه کارت دارم.
+Fifty students are in the school.
+پنجاه دانش‌آموز در مدرسه هستند.
+
+SIXTY
+IPA: /ˈsɪk.sti/
+Part of Speech: Number
+معنی فارسی: شصت
+Sixty pencils.
+شصت مداد.
+I have sixty photos.
+من شصت عکس دارم.
+Sixty people are in the room.
+شصت نفر در اتاق هستند.
+
+SEVENTY
+IPA: /ˈsev.ən.ti/
+Part of Speech: Number
+معنی فارسی: هفتاد
+Seventy books.
+هفتاد کتاب.
+I have seventy cards.
+من هفتاد کارت دارم.
+Seventy students are at the school.
+هفتاد دانش‌آموز در مدرسه هستند.
+
+EIGHTY
+IPA: /ˈeɪ.ti/
+Part of Speech: Number
+معنی فارسی: هشتاد
+Eighty apples.
+هشتاد سیب.
+I have eighty pencils.
+من هشتاد مداد دارم.
+Eighty people are here.
+هشتاد نفر اینجا هستند.
+
+NINETY
+IPA: /ˈnaɪn.ti/
+Part of Speech: Number
+معنی فارسی: نود
+Ninety books.
+نود کتاب.
+I have ninety cards.
+من نود کارت دارم.
+Ninety students are in the school.
+نود دانش‌آموز در مدرسه هستند.
+
+ONE HUNDRED
+IPA: /ˌwʌn ˈhʌn.drəd/
+Part of Speech: Number
+معنی فارسی: صد
+One hundred books.
+صد کتاب.
+I have one hundred pencils.
+من صد مداد دارم.
+One hundred students are here.
+صد دانش‌آموز اینجا هستند.
+
+بخش چهارم: اعداد ترکیبی – Compound Numbers
+برای ساخت اعداد بین دهگان‌ها، ابتدا عدد دهگان را می‌نویسیم و سپس عدد یکان را به آن اضافه می‌کنیم. در نوشتار انگلیسی، بین دهگان و یکان از خط تیره استفاده می‌شود.
+الگوی کلی:
+Tens + Hyphen + Units
+دهگان + خط تیره + یکان
+
+نمونه‌ها:
+21
+Twenty-one
+بیست و یک
+22
+Twenty-two
+بیست و دو
+23
+Twenty-three
+بیست و سه
+24
+Twenty-four
+بیست و چهار
+25
+Twenty-five
+بیست و پنج
+26
+Twenty-six
+بیست و شش
+27
+Twenty-seven
+بیست و هفت
+28
+Twenty-eight
+بیست و هشت
+29
+Twenty-nine
+بیست و نه
+31
+Thirty-one
+سی و یک
+35
+Thirty-five
+سی و پنج
+39
+Thirty-nine
+سی و نه
+42
+Forty-two
+چهل و دو
+48
+Forty-eight
+چهل و هشت
+52
+Fifty-two
+پنجاه و دو
+57
+Fifty-seven
+پنجاه و هفت
+64
+Sixty-four
+شصت و چهار
+73
+Seventy-three
+هفتاد و سه
+86
+Eighty-six
+هشتاد و شش
+99
+Ninety-nine
+نود و نه
+
+نکته مهم:
+برای ساخت عدد ترکیبی، دهگان و یکان را به هم متصل می‌کنیم و میان آن‌ها یک خط تیره قرار می‌دهیم.
+20 + 1
+Twenty-one
+بیست و یک
+30 + 5
+Thirty-five
+سی و پنج
+50 + 2
+Fifty-two
+پنجاه و دو
+80 + 6
+Eighty-six
+هشتاد و شش
+
+بخش پنجم: بانک اعداد ترکیبی مهم – Important Compound Numbers
+21 — Twenty-one
+25 — Twenty-five
+28 — Twenty-eight
+32 — Thirty-two
+35 — Thirty-five
+38 — Thirty-eight
+41 — Forty-one
+45 — Forty-five
+49 — Forty-nine
+52 — Fifty-two
+55 — Fifty-five
+58 — Fifty-eight
+63 — Sixty-three
+67 — Sixty-seven
+71 — Seventy-one
+75 — Seventy-five
+79 — Seventy-nine
+82 — Eighty-two
+86 — Eighty-six
+94 — Ninety-four
+99 — Ninety-nine
+
+بخش ششم: تفاوت اعداد -teen و -ty
+یکی از نکات مهم در یادگیری اعداد انگلیسی، تفاوت بین اعداد ۱۳ تا ۱۹ و اعداد دهگان است.
+thirteen
+سیزده
+thirty
+سی
+fourteen
+چهارده
+forty
+چهل
+fifteen
+پانزده
+fifty
+پنجاه
+sixteen
+شانزده
+sixty
+شصت
+seventeen
+هفده
+seventy
+هفتاد
+eighteen
+هجده
+eighty
+هشتاد
+nineteen
+نوزده
+ninety
+نود
+
+نکته تلفظی:
+در بسیاری از اعداد -teen، بخش پایانی /tiːn/ کشیده و معمولاً دارای تکیه اصلی است.
+در اعداد -ty، بخش پایانی /ti/ کوتاه‌تر است و معمولاً تکیه روی بخش اول قرار دارد.
+thirteen
+/ˌθɜːrˈtiːn/
+thirty
+/ˈθɜːr.ti/
+fourteen
+/ˌfɔːrˈtiːn/
+forty
+/ˈfɔːr.ti/
+fifteen
+/ˌfɪfˈtiːn/
+fifty
+/ˈfɪf.ti/
+
+تمرین شنیداری تلفظ:
+مدرس هر جفت را بخواند و زبان‌آموز تشخیص دهد کدام عدد را شنیده است:
+Thirteen / Thirty
+Fourteen / Forty
+Fifteen / Fifty
+Sixteen / Sixty
+Seventeen / Seventy
+Eighteen / Eighty
+Nineteen / Ninety
+
+بخش هفتم: شمارش از ۲۰ تا ۱۰۰ – Counting from 20 to 100
+اعداد دهگان را به ترتیب بخوانید:
+Twenty
+بیست
+Thirty
+سی
+Forty
+چهل
+Fifty
+پنجاه
+Sixty
+شصت
+Seventy
+هفتاد
+Eighty
+هشتاد
+Ninety
+نود
+One hundred
+صد
+
+تمرین شمارش:
+۱. از ۲۰ تا ۱۰۰، ده‌تا ده‌تا بشمارید.
+۲. از ۲۰ تا ۱۰۰، یک‌تا یک‌تا بشمارید.
+۳. از ۱۰۰ تا ۲۰، ده‌تا ده‌تا به عقب بشمارید.
+
+بخش هشتم: اعداد و تعداد اشیا – Numbers and Objects
+Twenty-one books
+بیست و یک کتاب
+Twenty-five apples
+بیست و پنج سیب
+Thirty-five pencils
+سی و پنج مداد
+Forty chairs
+چهل صندلی
+Fifty-two students
+پنجاه و دو دانش‌آموز
+Sixty-four pens
+شصت و چهار خودکار
+Seventy-three books
+هفتاد و سه کتاب
+Eighty-six cards
+هشتاد و شش کارت
+Ninety-nine apples
+نود و نه سیب
+One hundred students
+صد دانش‌آموز
+
+نکته گرامری:
+اسم‌های قابل‌شمارش بعد از اعداد بیشتر از یک معمولاً به شکل جمع می‌آیند.
+One book
+یک کتاب
+Twenty books
+بیست کتاب
+One apple
+یک سیب
+Thirty-five apples
+سی و پنج سیب
+
+بخش نهم: پرسش و پاسخ درباره تعداد – Asking about Quantity
+How many?
+چند تا؟
+How many books?
+چند کتاب؟
+Twenty books.
+بیست کتاب.
+How many apples?
+چند سیب؟
+Thirty-five apples.
+سی و پنج سیب.
+How many students?
+چند دانش‌آموز؟
+Fifty students.
+پنجاه دانش‌آموز.
+
+بخش دهم: مکالمه‌های کوتاه – Short Dialogues
+مکالمه اول: تعداد کتاب‌ها
+A: How many books?
+الف: چند کتاب؟
+B: Twenty-one books.
+ب: بیست و یک کتاب.
+
+مکالمه دوم: تعداد مدادها
+A: How many pencils?
+الف: چند مداد؟
+B: Thirty-five pencils.
+ب: سی و پنج مداد.
+
+مکالمه سوم: تعداد دانش‌آموزان
+A: How many students?
+الف: چند دانش‌آموز؟
+B: Fifty-two students.
+ب: پنجاه و دو دانش‌آموز.
+
+مکالمه چهارم: شمارش
+A: Can you count, please?
+الف: می‌توانی لطفاً بشماری؟
+B: Twenty, thirty, forty, fifty.
+ب: بیست، سی، چهل، پنجاه.
+
+بخش یازدهم: تمرین‌های کلاسی – Classroom Activities
+تمرین اول: تکرار اعداد دهگان
+مدرس هر عدد را می‌خواند و زبان‌آموز سه بار تکرار می‌کند:
+Twenty
+Thirty
+Forty
+Fifty
+Sixty
+Seventy
+Eighty
+Ninety
+One hundred
+
+تمرین دوم: کارت‌های عدد
+مدرس یک عدد را به انگلیسی بیان می‌کند. زبان‌آموز باید کارت دارای رقم مناسب را انتخاب کند.
+نمونه:
+مدرس: Fifty-two
+زبان‌آموز: ۵۲
+
+تمرین سوم: ساخت عدد ترکیبی
+مدرس دو بخش عدد را جداگانه می‌گوید.
+Thirty
+Five
+زبان‌آموز باید عدد ترکیبی را بیان کند:
+Thirty-five
+
+تمرین چهارم: تشخیص اعداد مشابه
+مدرس یکی از دو عدد را می‌خواند:
+Thirteen یا Thirty
+Fourteen یا Forty
+Fifteen یا Fifty
+زبان‌آموز باید رقم درست را انتخاب کند.
+
+تمرین پنجم: شمارش گروهی
+زبان‌آموزان به نوبت اعداد دهگان را از ۲۰ تا ۱۰۰ بیان می‌کنند.
+
+بخش دوازدهم: تمرین‌های نوشتاری – Written Practice
+تمرین ۱: نوشتن عدد با حروف
+عددهای زیر را به انگلیسی بنویسید:
+۲۰ = __________
+۳۰ = __________
+۴۰ = __________
+۵۰ = __________
+۶۰ = __________
+۷۰ = __________
+۸۰ = __________
+۹۰ = __________
+۱۰۰ = __________
+
+تمرین ۲: نوشتن رقم مناسب
+رقم هر کلمه را بنویسید:
+Twenty = ______
+Thirty = ______
+Forty = ______
+Fifty = ______
+Sixty = ______
+Seventy = ______
+Eighty = ______
+Ninety = ______
+One hundred = ______
+
+تمرین ۳: نوشتن اعداد ترکیبی
+اعداد زیر را با حروف انگلیسی بنویسید:
+۲۱ = __________
+۳۵ = __________
+۵۲ = __________
+۴۸ = __________
+۶۴ = __________
+۷۳ = __________
+۸۶ = __________
+۹۹ = __________
+
+تمرین ۴: نوشتن رقم مناسب
+رقم مناسب را مقابل هر کلمه بنویسید:
+Twenty-one = ______
+Thirty-five = ______
+Fifty-two = ______
+Forty-eight = ______
+Sixty-four = ______
+Seventy-three = ______
+Eighty-six = ______
+Ninety-nine = ______
+
+تمرین ۵: کامل کردن ترتیب اعداد
+جای خالی را کامل کنید:
+Twenty, Thirty, __________
+Forty, Fifty, __________
+Sixty, Seventy, __________
+Eighty, __________, One hundred
+Twenty, __________, Forty
+Fifty, __________, Seventy
+Thirty, Forty, __________
+Seventy, Eighty, __________
+
+تمرین ۶: تشخیص عدد درست
+گزینه درست را انتخاب کنید:
+۱. عدد ۳۵ کدام است؟
+الف) Thirty-five
+ب) Fifty-three
+ج) Thirty-four
+۲. عدد ۵۲ کدام است؟
+الف) Twenty-five
+ب) Fifty-two
+ج) Fifty-five
+۳. عدد ۸۶ کدام است؟
+الف) Eighty-six
+ب) Sixty-eight
+ج) Eighty-eight
+۴. عدد ۷۳ کدام است؟
+الف) Thirty-seven
+ب) Seventy-three
+ج) Seventy-five
+۵. عدد ۹۹ کدام است؟
+الف) Ninety-nine
+ب) Nineteen
+ج) Ninety
+
+بخش سیزدهم: آزمون کتبی – Written Test
+تعداد سؤال‌ها: ۳۰
+نمره کل: ۳۰
+زمان پیشنهادی: ۲۵ دقیقه
+تمام دستورالعمل‌ها فارسی هستند.
+
+بخش اول: تشخیص اعداد دهگان، سؤال‌های ۱ تا ۵
+گزینه درست را انتخاب کنید:
+۱. عدد ۳۰ کدام است؟
+الف) Twenty
+ب) Thirty
+ج) Forty
+د) Fifty
+۲. عدد ۴۰ کدام است؟
+الف) Fifty
+ب) Thirty
+ج) Forty
+د) Sixty
+۳. عدد ۶۰ کدام است؟
+الف) Seventy
+ب) Sixty
+ج) Eighty
+د) Ninety
+۴. عدد ۸۰ کدام است؟
+الف) Eighty
+ب) Seventy
+ج) Ninety
+د) Fifty
+۵. عدد ۱۰۰ کدام است؟
+الف) Ninety
+ب) Fifty
+ج) One hundred
+د) Twenty
+
+بخش دوم: تشخیص عدد ترکیبی، سؤال‌های ۶ تا ۱۰
+گزینه درست را انتخاب کنید:
+۶. عدد ۲۱ کدام است؟
+الف) Twenty-one
+ب) Twenty-two
+ج) Thirty-one
+د) Twenty-five
+۷. عدد ۳۵ کدام است؟
+الف) Fifty-three
+ب) Thirty-five
+ج) Thirty-four
+د) Forty-five
+۸. عدد ۵۲ کدام است؟
+الف) Twenty-five
+ب) Fifty-five
+ج) Fifty-two
+د) Fifty-three
+۹. عدد ۶۴ کدام است؟
+الف) Forty-six
+ب) Sixty-four
+ج) Sixty-five
+د) Seventy-four
+۱۰. عدد ۸۶ کدام است؟
+الف) Eighty-six
+ب) Sixty-eight
+ج) Eighty-eight
+د) Ninety-six
+
+بخش سوم: تشخیص کلمه و رقم، سؤال‌های ۱۱ تا ۱۵
+رقم درست را انتخاب کنید:
+۱۱. Forty
+الف) ۳۰
+ب) ۴۰
+ج) ۵۰
+د) ۶۰
+۱۲. Seventy
+الف) ۶۰
+ب) ۸۰
+ج) ۷۰
+د) ۹۰
+۱۳. Ninety-nine
+الف) ۹۸
+ب) ۸۹
+ج) ۹۰
+د) ۹۹
+۱۴. Thirty-five
+الف) ۵۳
+ب) ۳۵
+ج) ۳۰
+د) ۵۰
+۱۵. Fifty-two
+الف) ۲۵
+ب) ۵۵
+ج) ۵۲
+د) ۴۲
+
+بخش چهارم: کامل کردن ترتیب اعداد، سؤال‌های ۱۶ تا ۲۰
+عدد مناسب را در جای خالی بنویسید:
+۱۶. Twenty, Thirty, __________
+۱۷. Forty, Fifty, __________
+۱۸. Sixty, Seventy, __________
+۱۹. Eighty, __________, One hundred
+۲۰. Twenty, __________, Forty
+
+بخش پنجم: تشخیص اعداد مشابه، سؤال‌های ۲۱ تا ۲۵
+گزینه‌ای را انتخاب کنید که عدد خواسته‌شده را نشان می‌دهد:
+۲۱. عدد ۱۳
+الف) Thirty
+ب) Thirteen
+ج) Thirty-three
+د) Three
+۲۲. عدد ۴۰
+الف) Fourteen
+ب) Four
+ج) Forty
+د) Fourteen
+۲۳. عدد ۱۵
+الف) Fifty
+ب) Fifteen
+ج) Five
+د) Fifty-five
+۲۴. عدد ۷۰
+الف) Seventeen
+ب) Seven
+ج) Seventy
+د) Seventy-seven
+۲۵. عدد ۱۹
+الف) Ninety
+ب) Nineteen
+ج) Nine
+د) Ninety-nine
+
+بخش ششم: نوشتن اعداد، سؤال‌های ۲۶ تا ۳۰
+عددهای زیر را با حروف انگلیسی بنویسید:
+۲۶. ۲۸ = __________
+۲۷. ۴۵ = __________
+۲۸. ۵۷ = __________
+۲۹. ۷۹ = __________
+۳۰. ۱۰۰ = __________
+
+بخش چهاردهم: آزمون شفاهی – Speaking and Listening Test
+نمره کل: ۱۰
+زمان پیشنهادی: ۷ دقیقه
+
+بخش اول: تلفظ اعداد دهگان، ۳ نمره
+مدرس از زبان‌آموز می‌خواهد اعداد زیر را تلفظ کند:
+۳۰
+۵۰
+۸۰
+هر پاسخ صحیح: ۱ نمره.
+
+بخش دوم: تلفظ اعداد ترکیبی، ۲ نمره
+زبان‌آموز اعداد زیر را به انگلیسی بیان کند:
+۳۵
+۵۲
+هر پاسخ صحیح: ۱ نمره.
+
+بخش سوم: تشخیص عدد شنیده‌شده، ۳ نمره
+مدرس اعداد زیر را به انگلیسی می‌خواند. زبان‌آموز باید رقم آن‌ها را بنویسد:
+Forty-eight
+Seventy-three
+Ninety-nine
+هر پاسخ صحیح: ۱ نمره.
+
+بخش چهارم: تشخیص اعداد مشابه، ۲ نمره
+مدرس یکی از دو عدد را می‌خواند. زبان‌آموز باید رقم درست را بنویسد:
+Thirteen یا Thirty
+Fifteen یا Fifty
+هر پاسخ صحیح: ۱ نمره.
+
+بخش پانزدهم: پاسخ‌نامه تمرین‌های نوشتاری
+تمرین ۱:
+۱. Twenty
+۲. Thirty
+۳. Forty
+۴. Fifty
+۵. Sixty
+۶. Seventy
+۷. Eighty
+۸. Ninety
+۹. One hundred
+تمرین ۲:
+۱. ۲۰
+۲. ۳۰
+۳. ۴۰
+۴. ۵۰
+۵. ۶۰
+۶. ۷۰
+۷. ۸۰
+۸. ۹۰
+۹. ۱۰۰
+تمرین ۳:
+۱. Twenty-one
+۲. Thirty-five
+۳. Fifty-two
+۴. Forty-eight
+۵. Sixty-four
+۶. Seventy-three
+۷. Eighty-six
+۸. Ninety-nine
+تمرین ۴:
+۱. ۲۱
+۲. ۳۵
+۳. ۵۲
+۴. ۴۸
+۵. ۶۴
+۶. ۷۳
+۷. ۸۶
+۸. ۹۹
+تمرین ۵:
+۱. Forty
+۲. Sixty
+۳. Eighty
+۴. Ninety
+۵. Thirty
+۶. Sixty
+۷. Fifty
+۸. Ninety
+تمرین ۶:
+۱. الف
+۲. ب
+۳. الف
+۴. ب
+۵. الف
+
+بخش شانزدهم: پاسخ‌نامه آزمون کتبی – Answer Key
+بخش اول:
+۱. ب) Thirty
+۲. ج) Forty
+۳. ب) Sixty
+۴. الف) Eighty
+۵. ج) One hundred
+بخش دوم:
+۶. الف) Twenty-one
+۷. ب) Thirty-five
+۸. ج) Fifty-two
+۹. ب) Sixty-four
+۱۰. الف) Eighty-six
+بخش سوم:
+۱۱. ب) ۴۰
+۱۲. ج) ۷۰
+۱۳. د) ۹۹
+۱۴. ب) ۳۵
+۱۵. ج) ۵۲
+بخش چهارم:
+۱۶. Forty
+۱۷. Sixty
+۱۸. Eighty
+۱۹. Ninety
+۲۰. Thirty
+بخش پنجم:
+۲۱. ب) Thirteen
+۲۲. ج) Forty
+۲۳. ب) Fifteen
+۲۴. ج) Seventy
+۲۵. ب) Nineteen
+بخش ششم:
+۲۶. Twenty-eight
+۲۷. Forty-five
+۲۸. Fifty-seven
+۲۹. Seventy-nine
+۳۰. One hundred
+
+بخش هفدهم: پاسخ‌نامه آزمون شفاهی
+بخش اول:
+۱. Thirty
+۲. Fifty
+۳. Eighty
+بخش دوم:
+۱. Thirty-five
+۲. Fifty-two
+بخش سوم:
+۱. ۴۸
+۲. ۷۳
+۳. ۹۹
+بخش چهارم:
+۱. ۱۳ یا ۳۰، مطابق عددی که مدرس تلفظ کرده است.
+۲. ۱۵ یا ۵۰، مطابق عددی که مدرس تلفظ کرده است.
+
+بخش هجدهم: توضیح پاسخ‌ها – Answer Explanations
+سؤال‌های ۱ تا ۵ توانایی شناخت اعداد دهگان و عدد ۱۰۰ را می‌سنجند.
+سؤال‌های ۶ تا ۱۰ توانایی ساخت و تشخیص اعداد ترکیبی را ارزیابی می‌کنند.
+سؤال‌های ۱۱ تا ۱۵ ارتباط میان شکل نوشتاری و رقم را بررسی می‌کنند.
+سؤال‌های ۱۶ تا ۲۰ توانایی تشخیص ترتیب اعداد دهگان را می‌سنجند.
+سؤال‌های ۲۱ تا ۲۵ توانایی تمایز میان اعداد -teen و -ty را بررسی می‌کنند.
+سؤال‌های ۲۶ تا ۳۰ توانایی نوشتن اعداد ترکیبی و عدد ۱۰۰ را ارزیابی می‌کنند.
+نکته: در سؤال‌های شفاهی، پاسخ صحیح بر اساس عددی تعیین می‌شود که مدرس واقعاً تلفظ کرده است.
+
+بخش نوزدهم: معیار ارزیابی – Assessment Criteria
+آزمون کتبی:
+۲۷ تا ۳۰: عالی؛ تسلط مناسب بر اعداد ۲۰ تا ۱۰۰.
+۲۳ تا ۲۶: خوب؛ شناخت مناسب با اشتباهات جزئی.
+۱۸ تا ۲۲: قابل قبول؛ یادگیری اولیه و نیازمند تمرین.
+۰ تا ۱۷: نیازمند تمرین؛ نیاز به مرور مجدد.
+آزمون شفاهی:
+۹ تا ۱۰: تلفظ و تشخیص بسیار خوب.
+۷ تا ۸: عملکرد خوب.
+۵ تا ۶: عملکرد متوسط.
+۰ تا ۴: نیازمند تمرین بیشتر.
+شرایط پیشنهادی قبولی:
+حداقل ۲۳ از ۳۰ در آزمون کتبی.
+حداقل ۷ از ۱۰ در آزمون شفاهی.
+
+بخش بیستم: یادداشت آموزشی برای مدرس – Teacher Notes
+۱. ابتدا اعداد دهگان را به زبان‌آموز آموزش دهید.
+۲. پیش از آموزش اعداد ترکیبی، مطمئن شوید زبان‌آموز اعداد ۱ تا ۹ را می‌شناسد.
+۳. در آموزش اعداد ترکیبی، ابتدا از اعداد ساده مانند Twenty-one و Thirty-five استفاده کنید.
+۴. تفاوت Forty و Fourty را به‌صورت نوشتاری توضیح دهید و شکل صحیح Forty را تمرین کنید.
+۵. تفاوت اعداد -teen و -ty را با تمرین شنیداری آموزش دهید.
+۶. در تمرین شنیداری، اعداد مشابه را با فاصله و وضوح مناسب تلفظ کنید.
+۷. برای تمرین نوشتن، از زبان‌آموز بخواهید اعداد را بدون مشاهده نمونه بنویسد.
+۸. از کارت‌های عدد برای افزایش سرعت تشخیص استفاده کنید.
+۹. در پایان درس، اعداد ۱ تا ۱۰۰ را به‌صورت مرحله‌ای مرور کنید؛ اما انتظار نداشته باشید زبان‌آموز همه اعداد بین ۲۰ تا ۱۰۰ را بدون تمرین قبلی حفظ کرده باشد.
+۱۰. پیش از ورود به درس بعدی، تسلط زبان‌آموز بر اعداد اصلی و ترکیبی این درس را بررسی کنید.
+
+بخش بیست‌ویکم: یادداشت کیفیت آزمون – Test Quality Notes
+روایی (Validity):
+آزمون بر اساس اهداف آموزشی درس طراحی شده و شناخت اعداد دهگان، ساخت اعداد ترکیبی، تشخیص شنیداری، تلفظ و نوشتن اعداد را ارزیابی می‌کند.
+پایایی (Reliability):
+برای افزایش پایایی، دستورالعمل‌ها و شرایط اجرای آزمون باید برای همه زبان‌آموزان یکسان باشد. در بخش شنیداری، مدرس باید اعداد را با وضوح و سرعت تقریباً یکسان بیان کند.
+عملی بودن (Practicality):
+آزمون با کاغذ، مداد و کارت‌های عدد قابل اجراست و به تجهیزات تخصصی نیاز ندارد.
+تحلیل سؤال‌ها:
+Item Facility (IF): شاخص دشواری یا سهولت سؤال.
+Item Discrimination (ID): شاخص قدرت تمایز سؤال.
+Distractor Analysis: تحلیل عملکرد گزینه‌های انحرافی.
+مقادیر این شاخص‌ها باید بر اساس پاسخ‌های واقعی زبان‌آموزان محاسبه شوند و پیش از اجرای آزمون قابل گزارش نیستند.
+
+پایان درس ۰۵
+عنوان درس بعدی:
+درس ۰۶ – Greetings
+سلام و احوالپرسی`,
     [
-      "one, two, three, four, five",
-      "thirteen / thirty",
-      "twenty-one, fifty, one hundred",
-      "How old are you?",
-      "How much is it?",
+      "Twenty — توِنتی — /ˈtwen.ti/",
+      "Thirty — ثِرتی — /ˈθɜːr.ti/",
+      "Forty — فورتی — /ˈfɔːr.ti/",
+      "Fifty — فیفتی — /ˈfɪf.ti/",
+      "Sixty — سیکستی — /ˈsɪk.sti/",
+      "Seventy — سِوِنتی — /ˈsev.ən.ti/",
+      "Eighty — اِیتی — /ˈeɪ.ti/",
+      "Ninety — ناینتی — /ˈnaɪn.ti/",
+      "One hundred — وان هاندرد — /ˌwʌn ˈhʌn.drəd/",
+      "Twenty-one — بیست و یک",
+      "Thirty-five — سی و پنج",
+      "Fifty-two — پنجاه و دو",
+      "How many? — چند تا؟",
     ],
     [
-      v("twenty", "بیست", "I am twenty.", "twenty years old"),
-      v("hundred", "صد", "It costs one hundred dollars.", "one hundred"),
-      v("thirty", "سی", "My father is thirty-five.", "thirty years old"),
-      v("thousand", "هزار", "It costs one thousand dollars.", "one thousand"),
-      v("zero", "صفر", "Zero is a number.", "zero degrees"),
-      v("phone number", "شمارهٔ تلفن", "What’s your phone number?", "a phone number"),
+      v("twenty", "بیست", "Twenty books.", "twenty books"),
+      v("thirty", "سی", "Thirty apples.", "thirty apples"),
+      v("forty", "چهل", "Forty chairs.", "forty chairs"),
+      v("fifty", "پنجاه", "Fifty books.", "fifty books"),
+      v("sixty", "شصت", "Sixty pencils.", "sixty pencils"),
+      v("seventy", "هفتاد", "Seventy students.", "seventy students"),
+      v("eighty", "هشتاد", "Eighty apples.", "eighty apples"),
+      v("ninety", "نود", "Ninety books.", "ninety books"),
+      v("one hundred", "صد", "One hundred students.", "one hundred students"),
+      v("twenty-one", "بیست و یک", "Twenty-one books.", "twenty-one books"),
+      v("thirty-five", "سی و پنج", "Thirty-five pencils.", "thirty-five pencils"),
+      v("fifty-two", "پنجاه و دو", "Fifty-two students.", "fifty-two students"),
+      v("how many", "چند تا؟", "How many books?", "how many books"),
     ],
     choice(
-      "عدد ۳۰ را انتخاب کن.",
-      ["thirteen", "thirty", "three"],
-      "thirty",
-      "thirty یعنی سی و thirteen یعنی سیزده.",
+      "عدد ۳۵ به انگلیسی کدام است؟",
+      ["Fifty-three", "Thirty-five", "Thirty-four", "Forty-five"],
+      "Thirty-five",
+      "ابتدا دهگان Thirty و سپس یکان Five می‌آید و میان آن‌ها خط تیره قرار می‌گیرد.",
     ),
-    "سن و شمارهٔ تلفن فرضی خود را به انگلیسی بگو.",
+    "اعداد دهگان را از ۲۰ تا ۱۰۰ ده‌تا ده‌تا بشمار. سپس اعداد ۲۱، ۳۵، ۵۲، ۶۴، ۷۳، ۸۶ و ۹۹ را با حروف انگلیسی بنویس و با صدای بلند بخوان.",
   ],
   [
     "personal",
@@ -7786,7 +8655,7 @@ const toUnit = (s: Specification, i: number, level: Level): Unit => ({
   ],
 });
 export const units: Unit[] = [
-  ...specifications.slice(0, 3).map((s, i) => toUnit(s, i, "A1")),
+  ...specifications.slice(0, 5).map((s, i) => toUnit(s, i, "A1")),
   ...specificationsA2.map((s, i) => toUnit(s, i, "A2")),
   ...specificationsB1.map((s, i) => toUnit(s, i, "B1")),
 ];
